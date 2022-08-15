@@ -72,6 +72,26 @@
     margin-top: 15px;
 }
 
+.cns-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: visible;
+    width: 100%;
+    z-index: 0;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -ms-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
 @media (max-width: 768px) {
     .content .title {
         font-size: 30px;
