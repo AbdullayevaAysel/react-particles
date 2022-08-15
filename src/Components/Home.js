@@ -23,36 +23,13 @@ function Home() {
                 loaded={particlesLoaded}
                 options={{
                     fpsLimit: 120,
-                    interactivity: {
-                        events: {
-                            onClick: {
-                                enable: true,
-                                mode: "push",
-                            },
-                            onHover: {
-                                enable: true,
-                                mode: "attract",
-                            },
-                            resize: true,
-                        },
-                        modes: {
-                            push: {
-                                quantity: 4,
-                            },
-                            attract: { 
-                                distance: 200, 
-                                duration: 0.4, 
-                                factor: 5 
-                            }
-                        },
-                    },
                     particles: {
                         color: {
                             value: "#ffffff",
                         },
                         links: {
                             color: "#ffffff",
-                            distance: 200,
+                            distance: 250,
                             enable: true,
                             opacity: 0.5,
                             width: 1,
@@ -63,9 +40,6 @@ function Home() {
                         move: {
                             directions: "none",
                             enable: true,
-                            outModes: {
-                                default: "bounce",
-                            },
                             random: false,
                             speed: 1,
                             straight: false,
@@ -87,8 +61,27 @@ function Home() {
                             value: { min: 1, max: 5 },
                         },
                     },
+                    interactivity: {
+                        events: {
+                          onhover: {
+                            enable: true,
+                            mode: "grab"
+                          },
+                          resize: true
+                        },
+                        modes: {
+                          grab: {
+                            distance: 150,
+                            line_linked: {
+                              opacity: 1
+                            }
+                          },
+                          
+                        }
+                    },
                     detectRetina: true,
-                }}
+                }
+            }
             />
                 <div className="container">
                     <div className="logo">
